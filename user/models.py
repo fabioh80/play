@@ -37,5 +37,3 @@ class UserPrefGame(models.Model):
     preference = models.ForeignKey(Preference, primary_key=True)
     game = models.ForeignKey(Game, primary_key=True)
     order = models.IntegerField()
-
-class
