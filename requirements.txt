@@ -1,0 +1,2 @@
+https://github.com/stefanfoulis/django-phonenumber-field
+pip install django-phonenumber-field
