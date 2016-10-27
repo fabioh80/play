@@ -25,7 +25,12 @@ class User(models.Model):
 
 class Preference(models.Model):
     user = models.OneToOneField(User, primary_key=True)
+
+
+class Photo(models.Model):
+    preference = models.ForeignKey(Preference, primary_key=True)
     photo = models.ImageField()
+    status = models.CharField(max_length=10, default='WAIT')
 
 
 class Game(models.Model):
